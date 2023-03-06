@@ -1,0 +1,13 @@
+<div class="container mb-4 row">
+  <div class="col-10">
+    <h4 class="my-0">{{job['title']}}</h4>
+    <p class="fs-5 my-0" style="color:#606060">Location: {{job['location']}}</p>
+    {% if 'salary' in job%}
+    <p class="fs-5 my-0" style="color:#606060">Salary: {{job['salary']}}</p>
+          {% endif %}
+  </div>
+  <div class="col-2 mt-3">
+      <a href="mailto:theamankumarsharma3@gmail.com?subject=Job%20application%20for%20{{job['title']}}&body=My%20name%3A%20%3Cyour%20name%3E%0D%0AAbout%20Me%3A%20%3Cabout%20yourself%20about%2020-30%20words%3E%0D%0AResume%3A%20%3Cplease%20attach%20your%20resume%3E" type="button" class="btn btn-outline-primary">Apply</a>
+  </div>
+  <hr class="border border-primary opacity-100 mt-3">
+</div>
